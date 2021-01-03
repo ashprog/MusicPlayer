@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:paddingBottom="5dp"
+    tools:context=".CollapsedMPFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <SeekBar
+            android:id="@+id/collapsed_mp_songProgress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:thumb="@color/colorAccent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="2dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/ic_baseline_arrow_drop_up_24" />
+
+            <ImageView
+                android:id="@+id/collapsed_mp_artIV"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon" />
+
+            <TextView
+                android:id="@+id/collapsed_mp_titleTV"
+                style="@style/TextAppearance.Compat.Notification.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:text="TITLE"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/collapsed_mp_pauseplayIV"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_baseline_pause_24" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
